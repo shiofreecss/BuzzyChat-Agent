@@ -9,13 +9,14 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@types/three": "^0.162.0",
     "next": "^14.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "three": "^0.162.0",
-    "@types/three": "^0.162.0"
+    "three": "^0.162.0"
   },
   "devDependencies": {
+    "@netlify/plugin-nextjs": "^5.10.5",
     "@types/node": "^20.11.19",
     "@types/react": "^18.2.55",
     "@types/react-dom": "^18.2.19",
@@ -27,4 +28,4 @@
     "typescript": "^5.3.3"
   },
   "description": "A 3D talking agent created with Next.js, Three.js, Web Speech API, and Dashscope Aliyun's qwen-max model."
-} 
+}

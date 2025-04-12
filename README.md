@@ -49,6 +49,23 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+## Deploying to Netlify
+
+Follow these steps to deploy the application to Netlify:
+
+1. Push your code to a GitHub repository
+2. Log in to [Netlify](https://www.netlify.com/) and click "New site from Git"
+3. Select your GitHub repository
+4. Configure build settings:
+   - Build command: `npm run build`
+   - Publish directory: `.next`
+5. Add your environment variables:
+   - Go to Site settings > Build & deploy > Environment > Environment variables
+   - Add `NEXT_PUBLIC_DASHSCOPE_API_KEY` with your API key
+6. Click "Deploy site"
+
+The netlify.toml file in the repository already contains the necessary configuration for deployment.
+
 ## How to Use
 
 1. Choose between the human agent or the Mecha robot using the navigation links
@@ -89,6 +106,7 @@ The Mecha Robot can talk about:
 - Implemented enhanced voice selection with more natural-sounding options
 - Optimized voice processing for smoother multilingual conversations
 - Removed Beaver and Explorer Beaver agents to focus development on human and Mecha models
+- Added Netlify deployment support with configuration files
 
 ### v1.2.0
 - Added support for multiple languages (English, Vietnamese, Japanese, Chinese)
